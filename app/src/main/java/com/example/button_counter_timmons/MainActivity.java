@@ -56,6 +56,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState){
         super.onRestoreInstanceState(savedInstanceState);
+
+        String counterValue = savedInstanceState.getString( "display");
+        display.setText(counterValue);
     }
 
     @Override
